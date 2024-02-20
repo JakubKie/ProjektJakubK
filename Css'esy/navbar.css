@@ -1,7 +1,7 @@
 :root {
   --main-page-color: #ffffff;
   --side-main-page-color: #dddddd;
-  --see-me-colour: yellow;
+  --see-me-colour: rgb(255, 225, 0);
   --main-text-color: #000000;
   --side-text-color: grey;
 }
@@ -16,7 +16,7 @@ nav {
   top: 0;
   position: sticky;
   height: 100vh;
-  width: 22%;
+  width: 100vh;
   justify-content: center;
   align-items: center;
   border-right: 1px solid #000000;
@@ -78,7 +78,8 @@ nav {
 }
 
 .NotyBuble {
-  margin-left: 87px;
+  position: relative;
+  left: 40px;
   background-color: var(--see-me-colour);
   border-radius: 100%;
   padding: 5px 10px;
@@ -107,7 +108,7 @@ nav {
   border: none;
   width: 150px;
   height: 30px;
-  border-radius: 10%;
+  border-radius: 15px;
 }
 
 .user > p {
