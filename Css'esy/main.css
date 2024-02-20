@@ -1,6 +1,17 @@
 :root {
   --main-page-color: #ffffff;
+  --side-main-page-color: #aaaaaa;
   --prize-colour: yellow;
   --main-text-colour: #000000;
   --side-text-colour: grey;
+}
+
+body {
+  background-color: var(--main-page-color);
+  display: flex;
+  border-radius: 5%;
+}
+
+nav {
+  background-color: var(--main-page-color);
 }
