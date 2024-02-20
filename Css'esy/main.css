@@ -4,14 +4,117 @@
   --prize-colour: yellow;
   --main-text-colour: #000000;
   --side-text-colour: grey;
+  --button-click-color: #cccccc;
 }
 
 body {
   background-color: var(--main-page-color);
   display: flex;
   border-radius: 5%;
+  font-family: "Roboto", sans-serif;
 }
 
-nav {
-  background-color: var(--main-page-color);
+button:hover,
+a:hover {
+  background-color: var(--button-click-color);
+  scale: 1.05;
+  transition: 0.3s;
 }
+
+button:active,
+a:active {
+  background-color: var(--button-click-color);
+  scale: 0.9;
+  transition: 0.3s;
+}
+
+/*main*/
+
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 30px;
+}
+
+.bar > button {
+  font-size: 20px;
+  border: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seracheButton {
+  position: relative;
+  left: 27vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--side-main-page-color);
+  height: 50px;
+  width: 100%;
+  border-radius: 7%;
+}
+
+.bar > p {
+  color: var(--side-text-colour);
+}
+
+div.bar > p.longText {
+  /*:first-child nie działa D:*/
+  width: 225px;
+}
+
+div.bar > p.Selected {
+  color: var(--main-text-colour);
+  font-weight: bold;
+}
+
+.seracheButton > a {
+  border-radius: 25%;
+}
+
+header {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > h2 {
+  display: inline-block;
+}
+
+/*
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: green;
+  height: 79vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  border: 1px solid black;
+  width: 25%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.product > img {
+  background-color: red;
+  width: 50%;
+  height: 50%;
+}
+*/

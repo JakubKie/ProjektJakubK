@@ -2,13 +2,13 @@
   --main-page-color: #ffffff;
   --side-main-page-color: #dddddd;
   --see-me-colour: yellow;
-  --main-text-colour: #000000;
-  --side-text-colour: grey;
+  --main-text-color: #000000;
+  --side-text-color: grey;
 }
 
 .section {
   display: flex;
-  color: var(--main-text-colour);
+  color: var(--main-text-color);
 }
 
 nav {
@@ -20,6 +20,8 @@ nav {
   justify-content: center;
   align-items: center;
   border-right: 1px solid #000000;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-page-color);
 }
 
 .logo {
@@ -76,7 +78,7 @@ nav {
 }
 
 .NotyBuble {
-  margin-left: 90px;
+  margin-left: 87px;
   background-color: var(--see-me-colour);
   border-radius: 100%;
   padding: 5px 10px;
@@ -108,20 +110,8 @@ nav {
   border-radius: 10%;
 }
 
-.user > button:hover {
-  background-color: var(--side-main-page-color);
-  scale: 1.05;
-  transition: 0.3s;
-}
-
-.user > button:active {
-  background-color: #aaaaaa;
-  scale: 0.9;
-  transition: 0.3s;
-}
-
 .user > p {
-  color: var(--side-text-colour);
+  color: var(--side-text-color);
   margin: 5px;
 }
 
