@@ -11,6 +11,10 @@
   color: var(--main-text-color);
 }
 
+.section > img {
+  width: 1.5rem;
+}
+
 nav {
   display: flex;
   top: 0;
@@ -50,7 +54,7 @@ nav {
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .section {
@@ -61,6 +65,7 @@ nav {
   padding: 10px 20px;
   margin: 1px 25px;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .selected {
@@ -78,33 +83,37 @@ nav {
 }
 
 .NotyBuble {
-  position: relative;
-  left: 40px;
+  position: absolute;
+  right: 1vh;
   background-color: var(--see-me-colour);
   border-radius: 100%;
-  padding: 5px 10px;
+  padding: 10px 10px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .user {
   display: flex;
-  margin-top: 35px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
+  font-size: 0.65rem;
   gap: 10px;
 }
 
 .user > img {
-  width: 75px;
+  width: 125px;
 }
 
 .user > h3 {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .user > button {
-  font-size: 20px;
+  font-size: 1.1rem;
   border: none;
   width: 150px;
   height: 30px;
@@ -113,9 +122,10 @@ nav {
 
 .user > p {
   color: var(--side-text-color);
-  margin: 5px;
+  margin: 1px;
+  font-size: 1rem;
 }
 
 .user > p:last-child {
-  margin: 20px;
+  margin: 10px;
 }

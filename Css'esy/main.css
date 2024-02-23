@@ -1,6 +1,6 @@
 :root {
   --main-page-color: #ffffff;
-  --side-main-page-color: #aaaaaa;
+  --side-main-page-color: #dddddd;
   --prize-colour: rgb(194, 171, 0);
   --main-text-colour: #000000;
   --side-text-colour: grey;
@@ -41,7 +41,7 @@ a:active,
 }
 
 .bar > button {
-  font-size: 20px;
+  font-size: 1.2rem;
   border: none;
   width: 80px;
   height: 40px;
@@ -53,20 +53,22 @@ a:active,
 
 .seracheButton {
   position: relative;
-  left: 30vw;
+  left: 25vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: var(--side-main-page-color);
   height: 50px;
   width: 30%;
   border-radius: 15px;
+  padding: 10px;
 }
 
 .seracheButton > input {
   border: none;
   background-color: transparent;
   outline: none;
+  width: 100%;
 }
 
 .bar > p {
@@ -80,6 +82,10 @@ div.bar > p.Selected {
 
 .seracheButton > a {
   border-radius: 25%;
+  flex: 0 1 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -105,8 +111,8 @@ header > h2 {
   border: 10px solid var(--prize-colour);
   background-color: var(--side-main-page-color);
   border-radius: 30px;
-  width: 30vw;
-  height: 300px;
+  width: 310px;
+  height: 310px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,7 +124,8 @@ header > h2 {
 
 .product > img {
   height: 200px;
-  width: 50%;
+  width: 200px;
+  flex: 0 0 50%;
 }
 
 div.product > div.details {
@@ -131,4 +138,104 @@ div.product > div.details {
 
 .details > h3 {
   color: var(--prize-colour);
+}
+
+@media (max-width: 768px) {
+  .seracheButton {
+    position: relative;
+    left: 1vw;
+  }
+  body {
+    width: 768px;
+  }
+  :root {
+    font-size: 20px;
+  }
+  nav {
+    font-size: 15px;
+    width: 30vw;
+  }
+  .section {
+    margin: 1px 10px;
+    padding: 5px 10px;
+  }
+  .NotyBuble {
+    width: 27px;
+    height: 27px;
+  }
+  .section > img {
+    width: 1.2rem;
+  }
+  .bar > p {
+    font-size: 15px;
+  }
+  .seracheButton {
+    position: absolute;
+    left: 77vw;
+    height: 25px;
+    width: 20%;
+  }
+  .user > p:last-child {
+    margin: 10px;
+  }
+  .user {
+    margin-top: 30px;
+  }
+  .user > h3 {
+    font-size: 1rem;
+  }
+  .user > p {
+    font-size: 0.5rem;
+  }
+  .user > img {
+    width: 75px;
+  }
+  .bar {
+    margin: 20px 10px;
+    gap: 10px;
+    width: 65vw;
+  }
+  .content {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 483px) {
+  /*483 zamiast 482 bo tutaj wykluczał z jakiegoś powodu 482*/
+  .seracheButton {
+    position: relative;
+    left: 1vw;
+  }
+  body {
+    width: 482px;
+  }
+  :root {
+    font-size: 20px;
+  }
+  body > nav {
+    display: none;
+  }
+  .products {
+    width: 75vh;
+  }
+  button > img {
+    src: "./../IMAGE/Menu.svg";
+  }
+  .seracheButton {
+    position: absolute;
+    left: 69vw; /*nice*/
+    height: 25px;
+    width: 30%;
+  }
+  .bar {
+    margin: 20px 10px;
+    gap: 10px;
+    width: 65vw;
+  }
+  .content {
+    width: 70vw;
+  }
+  button > img {
+    content: url("./../IMAGE/Menu.svg");
+  }
 }
